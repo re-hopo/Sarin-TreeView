@@ -1,0 +1,313 @@
+.sarin-filters-root{
+    position: sticky;
+    top: 10px;
+    background: #fff;
+    border: 1px solid #dadada;
+    padding: 10px;
+    z-index:9
+}
+.sarin-filter-con.sarin-rtl{
+    direction:rtl
+}
+.sarin-filter-con.sarin-ltr{
+    direction:ltr
+}
+.sarin-filter-con ul{
+    margin:0;
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:5px;
+    padding:0;
+}
+.sarin-filter-con li{
+    display:flex;
+    align-items:center;
+    gap:5px;
+    padding:5px;
+    margin:0;
+    border:1px solid #e2f0ff;
+}
+.sarin-filter-con li p{
+    margin:0;
+    font-size:13px;
+}
+.sarin-filter-con li button{
+    cursor:pointer;
+    border:none;
+    font-size:15px;
+    background-color:#0075FF;
+    color:#fff;
+    height:25px;
+    width:25px;
+}
+.sarin-search-con.sarin-rtl{
+    direction:rtl
+}
+.sarin-search-con.sarin-ltr{
+    direction:ltr;
+}
+.sarin-search-con{
+    display:flex;
+    margin-top:5px ;
+    justify-content:space-between;
+    gap:5px;
+    width: 100%;
+}
+.sarin-search-con input{
+    width:70%;
+    padding:5px;
+    border:1px solid #dedede;
+    outline:none
+}
+.sarin-search-con button.sarin-search-clear-btn{
+    width:20%;
+    background-color: #e7e7e7;
+    border:none;
+    color:#000;
+}
+.sarin-search-con.searched button.sarin-search-clear-btn{
+    cursor:pointer;
+}
+.sarin-search-con.searched button.sarin-search-clear-btn{
+    background-color:#0075FF;
+    color:#ffff;
+    cursor:pointer;
+}
+.sarin-search-con button.sarin-expand-collapse{
+    background-color:#e7e7e7;
+    width:10%;
+    border:none;
+    font-size:18px;
+    color:#000;
+    padding-top:5px;
+    line-height:1;
+    text-align:center;
+    transition:all 0.3s ease-in-out;
+    cursor:pointer
+}
+.sarin-search-con.expanded button.sarin-expand-collapse{
+    background-color:#0075FF;
+    color:#fff;
+}
+.sarin-search-con.searched button.sarin-expand-collapse{
+    background-color:#efefef;
+    cursor:initial;
+    color:#cecece;
+}
+.sarin-tree-view-items-con.sarin-ltr{
+    direction:ltr;
+}
+.sarin-tree-view-items-con.sarin-rtl{
+    direction:rtl;
+}
+.sarin-tree-view-items-con.sarin-rtl.indent-1 .tree-view-item{
+    margin-right:10px;
+}
+.sarin-tree-view-items-con.sarin-rtl.indent-2 .tree-view-item{
+    margin-right:20px;
+}
+.sarin-tree-view-items-con.sarin-rtl.indent-3 .tree-view-item{
+    margin-right:30px;
+}
+.sarin-tree-view-items-con.sarin-rtl.indent-4 .tree-view-item{
+    margin-right:40px;
+}
+.sarin-tree-view-items-con.sarin-rtl>.tree-view-item {
+    margin-right:0!important;
+}
+.sarin-tree-view-items-con.sarin-ltr.indent-1 .tree-view-item{
+    margin-left:10px;
+}
+.sarin-tree-view-items-con.sarin-ltr.indent-2 .tree-view-item{
+    margin-left:20px;
+}
+.sarin-tree-view-items-con.sarin-ltr.indent-3 .tree-view-item{
+    margin-left:30px;
+}
+.sarin-tree-view-items-con.sarin-ltr.indent-4 .tree-view-item{
+    margin-left:40px;
+}
+.sarin-tree-view-items-con.sarin-ltr>.tree-view-item {
+    margin-left:0!important;
+}
+.sarin-tree-view-items-con button.arrow{
+    cursor: pointer;
+    height: 40px;
+    background-color: #e7e7e7;
+    width:40px;
+    border:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.sarin-tree-view-items-con.sarin-ltr button.arrow{
+     margin-right: 5px;
+}
+.sarin-tree-view-items-con.sarin-rtl button.arrow{
+     margin-left: 5px;
+}
+.sarin-tree-view-items-con .tree-view-item.has-children,
+.sarin-tree-view-items-con .tree-view-item.empty-children,
+.sarin-tree-view-items-con .tree-view-item.child{
+    display:none;
+}
+.sarin-tree-view-items-con .tree-view-item.fixed-active{
+    display:block;
+}
+.sarin-tree-view-items-con .tree-view-item.opened>.childrenWrapper> .tree-view-item{
+    display:block;
+}
+.sarin-tree-view-root.expanded .childrenWrapper> .tree-view-item{
+     display:block;
+}
+.sarin-tree-view-items-con .contentWrapper{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    background-color:#fff;
+    border:1px solid #ddd;
+    margin:3px 0;
+}
+.sarin-tree-view-items-con .contentWrapper *{
+    display:block;
+    user-select:none;
+}
+.sarin-tree-view-items-con .actions button{
+    cursor: pointer;
+    background-color: #dbe9f9;
+    border:none;
+    padding:5px 7px;;
+    transition: all 0.3s ease-in-out
+}
+.sarin-tree-view-items-con.sarin-ltr .actions button{
+    margin-right: 5px;
+}
+.sarin-tree-view-items-con.sarin-rtl .actions button{
+    margin-left: 5px;
+}
+.sarin-tree-view-items-con  .actions button:hover{
+    background-color: #0075FF;
+    color:#fff
+}
+.sarin-tree-view-items-con .tree-view-item.empty-children>.contentWrapper button.arrow{
+    background:none;
+}
+.sarin-tree-view-items-con .tree-view-item.clicked.empty-children>.contentWrapper button{
+    background: #0075FF;
+    color: #fff;
+}
+.sarin-tree-view-items-con .tree-view-item.clicked>.contentWrapper{
+    color:#000;
+}
+.sarin-tree-view-items-con .contentWrapper>button:after {
+    content:'';
+    border: solid black;
+    display: inline-block;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width:10px;
+    height:10px;
+    transition:0.3s all ease-in
+}
+.sarin-tree-view-items-con.sarin-ltr .tree-view-item.clicked.child .contentWrapper{
+    border-left:3px solid #0075FF;
+}
+.sarin-tree-view-items-con.sarin-rtl .tree-view-item.clicked.child .contentWrapper{
+    border-right:3px solid #0075FF;
+}
+.sarin-tree-view-items-con .tree-view-item.opened.has-children>.contentWrapper button.arrow{
+    background-color: #dbe9f9;
+}
+.sarin-tree-view-items-con .tree-view-item.clicked.has-children>.contentWrapper button.arrow{
+    background-color: #0075FF;
+}
+.sarin-tree-view-items-con.sarin-ltr .tree-view-item.opened.has-children>.contentWrapper>button:after{
+    transform: rotate(135deg);
+     -webkit-transform: rotate(135deg);
+}
+.sarin-tree-view-items-con.sarin-rtl .tree-view-item.opened.has-children>.contentWrapper>button:after{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.sarin-tree-view-items-con.sarin-ltr .contentWrapper>button:after {
+    border-width: 2px 2px 0 0;
+}
+.sarin-tree-view-items-con.sarin-rtl .contentWrapper>button:after {
+    border-width: 0 0 2px 2px;
+}
+.sarin-tree-view-items-con.sarin-ltr .tree-view-item.clicked>.contentWrapper>button:after{
+    border-color: white; 
+}
+.sarin-tree-view-items-con.sarin-rtl .tree-view-item.clicked>.contentWrapper>button:after{
+    border-color: white;
+}
+.sarin-tree-view-items-con .tree-view-item.empty-children>.contentWrapper>button:after{
+    border: solid #989898;
+    cursor:default
+}
+.sarin-tree-view-items-con.sarin-ltr .tree-view-item.empty-children>.contentWrapper>button:after{
+    border-width: 0 2px 2px 0;
+}
+.sarin-tree-view-items-con.sarin-rtl .tree-view-item.empty-children>.contentWrapper>button:after {
+    border-width: 0 0 2px 2px;
+}
+.sarin-tree-view-items-con .tree-view-item.clicked.empty-children>.contentWrapper>button:after {
+    border-color:#3850a7;
+}
+.sarin-tree-view-items-con .contentWrapper i{
+    width:20px;
+}
+.sarin-tree-view-items-con.sarin-ltr .contentWrapper i{
+    margin-left:10px;
+}
+.sarin-tree-view-items-con.sarin-rtl .contentWrapper i{
+    margin-right:10px;
+}
+.sarin-tree-view-items-con .contentWrapper span{
+    flex:6;
+    height:100%;
+    padding:10px;
+}
+.sarin-tree-view-root.clickable .sarin-tree-view-items-con .contentWrapper span{
+    cursor:pointer;
+}
+.sarin-tree-view-items-con .contentWrapper svg{
+    height: 15px;
+    width:15px;
+}
+.sarin-tree-view-items-con .contentWrapper input[type=checkbox] + label {
+    display: block;
+    cursor: pointer;
+    margin:0 9px;
+}
+.sarin-tree-view-items-con .contentWrapper input[type=checkbox] {
+    display: none;
+}
+.sarin-tree-view-items-con .contentWrapper input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #999;
+    border-radius: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+    font-size:12px;
+    padding:0 2px;
+}
+.sarin-tree-view-items-con .contentWrapper input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+.sarin-tree-view-items-con .contentWrapper input[type=checkbox]:checked + label:before {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+.sarin-tree-view-items-con .contentWrapper input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+}
+.sarin-tree-view-items-con .contentWrapper input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+}
